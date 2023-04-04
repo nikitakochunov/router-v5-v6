@@ -25,10 +25,6 @@ const HomePage = () => {
 const UsersLayout = () => {
   const { userId, page } = useParams()
 
-  // if (userId && (page !== 'profile' || page !== 'edit')) {
-  //   return <UserPage />
-  // }
-
   if (userId && page === 'profile') {
     return <UserPage />
   }
